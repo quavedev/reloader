@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.3 - 2022-02-10
+
+Prevent errors on resume if splashscreen is not defined.
+
 ## 2.0.2 - 2020-10-19
 ### New feature
 You can control from your app code when your app should update.
