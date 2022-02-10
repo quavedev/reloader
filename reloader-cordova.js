@@ -203,8 +203,11 @@ const Reloader = {
     localStorage.removeItem('reloaderLastPause');
 
     if (shouldCheck) {
-      this.debug('_onResume - show splashscreen');
-      navigator.splashscreen.show();
+      // Show the splashscreen if available (this has been causing issues on iOS)
+      if (navigator && navigator.splashscreen && navigator.splashscreen.show) {
+        this.debug('_onResume - show splashscreen');
+        navigator.splashscreen.show();
+      }
 
       this._checkForUpdate();
       return;
