@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0 - 2024-09-13
+
+- Removes cordova-plugin-splashscreen
+
 ## 2.0.3 - 2022-02-10
 
 Prevent errors on resume if splashscreen is not defined.
